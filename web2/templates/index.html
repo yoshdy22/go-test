@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>シス事特許検索</title>
+  </head>
+  <body>
+    <header>
+      <h1>シス事特許情報</h1>
+    </header>
+    <div class="wrap">
+      <div class="input">
+        <form action="/new" method="post">
+          <p>案件管理番号 :<input type="text" name="content" size="30" placeholder="管理番号"/> <input type="submit" value="検索" /></p>
+        </form>
+      </div>
+      <div class="indexGet">
+        <ul>
+          <li>
+            {{.no}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
